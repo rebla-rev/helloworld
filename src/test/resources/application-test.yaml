@@ -1,0 +1,6 @@
+spring:
+  flyway:
+    locations: classpath:db/shared
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:13.3:///customer_authorization
