@@ -12,7 +12,7 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
   helloworld:
-    image: docker.io/library/helloworld:latest
+    image: ghcr.io/rebla-rev/helloworld:latest
     environment:
       - DB_URL=jdbc:postgresql://db:5432/helloworld
       - DB_USERNAME=postgres
